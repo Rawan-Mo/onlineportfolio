@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Rawan's Space</title>
+        <link rel="shortcut icon" type="image/png" href="Assets/icon.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a aria-label="Press logo to go to home page" href="index.html">Rawan Mohamed</a>
+                </div>
+                <div class="navbar">
+                    <ul>
+                        <li><a aria-label="Home page" href="index.html">Home</a></li>
+                        <li><a aria-label="About page" href="about.html">About</a></li>
+                        <li><a aria-label="Open resume in a new tab" href="https://drive.google.com/file/d/17AUeXdR25XRhIuSSS-Mq-ENwJuHUMuOS/view?usp=share_link" target="_blank">Resume</a></li>
+                        <li><a aria-label="Contact page" class="active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       <main>
+        <form action="mailto:rawansafty@gmail.com" method="post" name=”EmailForm”>
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+              </li>
+              <li>
+                <div class="container">
+                    <div>
+                        <label for="communication">Preferred Communication:</label>
+                    </div>
+                    <div class="checkbox-container">
+                        <div class="check">
+                            <input type="checkbox" id="comm1" name="comm1" value="Email">
+                        <label for="method1">Email</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" id="comm2" name="comm2" value="Phone">
+                        <label for="method2">Phone</label>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>              
+            </ul>
+          </form>          
+       </main>
+    </body>
+</html>
